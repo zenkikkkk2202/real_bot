@@ -1,4 +1,4 @@
-class BotController < ApplicationController
+class WeatherController < ApplicationController
   require 'line/bot' 
 
   # callbackアクションのCSRFトークン認証を無効
