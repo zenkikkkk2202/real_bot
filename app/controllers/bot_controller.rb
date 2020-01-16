@@ -27,10 +27,10 @@ class BotController < ApplicationController
     events.each { |event|
 
       # event.message['text']でLINEで送られてきた文書を取得
-      if event.message['text'].include?("好き")
-        response = "んほぉぉぉぉぉぉ！すきすきすきすきすきすきすきすきぃぃぃぃぃ"
-      elsif event.message["text"].include?("行ってきます")
-        response = "どこいくの？どこいくの？どこいくの？寂しい寂しい寂しい。。。"
+      if event.message['text'].include?("三田市")
+        response = "兵庫県三田市"
+      elsif event.message["text"].include?("兵庫県")
+        response = "三田市"
       elsif event.message['text'].include?("おはよう")
         response = "おはよう。なんで今まで連絡くれなかったの？"
       elsif event.message['text'].include?("みーくん")
