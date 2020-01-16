@@ -11,7 +11,7 @@ class WeatherController < ApplicationController
     }
   end
 
-  def nakamura
+  def callback
     # Postモデルの中身をランダムで@postに格納する
     @post=Post.offset( rand(Post.count) ).first
     body = request.body.read
